@@ -109,6 +109,8 @@
       <LastGenOutput>EmpDBModel.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
+    <Content Include="WebAPIClient\Index.html" />
+    <Content Include="WebAPIClient\Main.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />

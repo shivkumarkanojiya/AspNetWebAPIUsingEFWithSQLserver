@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="Main.js"></script>
+</head>
+<body>
+    <br /><br />
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="lblName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="txtName" required />
+            </div>
+            <div class="col-md-6">
+                <label for="lblEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="txtEmail" required />
+            </div>
+            <div class="col-md-6">
+                <label for="lblIsActive" class="form-label">IsActive</label>
+                <input type="text" class="form-control" id="txtIsActive" required />
+            </div>
+            <div class="col-md-6">
+                <label for="lblCreatedon" class="form-label">Created Date</label>
+                <input type="text" class="form-control" id="txtCreateOn" required />
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" id="btnCreateEmp" onclick="createEmployee()">Create</button>
+                <button type="button" class="btn btn-primary" id="btnUpdateEmp" disabled>Update</button>
+            </div>
+        </form>
+        <br />
+        <table class="table table-bordered table-striped table-resposive">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>IsActive</th>
+                    <th>Created Date</th>    
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tblEmpBody">
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
